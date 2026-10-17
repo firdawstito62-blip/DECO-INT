@@ -1,0 +1,6 @@
+{
+  "name": "Studio Vaneau — Architecture d'Intérieur",
+  "description": "Studio d'architecture d'intérieur et décoration contemporaine. Projets sur mesure, estimations en direct et sélection de pièces signatures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
