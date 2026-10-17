@@ -23,21 +23,52 @@ export const Navbar: React.FC<NavbarProps> = ({ cartCount, onOpenCart, onOpenCon
   return (
     <>
       {showPromoBanner && (
-        <aside aria-label="Annonce partenaire" className="bg-[#1A1816] text-[#FAF9F5] text-xs py-2 px-4 border-b border-white/10 z-50 relative">
+        <aside aria-label="Annonces partenaires" className="bg-[#1A1816] text-[#FAF9F5] text-xs py-2 px-4 border-b border-white/10 z-50 relative">
           <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-            <div className="flex-1 flex items-center justify-center gap-2 text-center flex-wrap">
-              <span className="text-[#C2A374] font-semibold uppercase text-[10px] tracking-wider">Offre Partenaire</span>
+            <div className="flex-1 flex items-center justify-center gap-3 text-center flex-wrap">
+              <span className="text-[#C2A374] font-semibold uppercase text-[10px] tracking-wider">Offres & Partenaires</span>
               <span className="text-white/40 hidden sm:inline">·</span>
-              <span className="text-white/90">Découvrez la boutique en ligne partenaire :</span>
-              <a
-                href="https://gsnaauva.mychariow.shop/binbotsite"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-[#C2A374] hover:text-[#E0C9A6] underline underline-offset-2 inline-flex items-center gap-1 transition-colors"
-              >
-                <span>Accéder à l'offre</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
+              <div className="flex items-center gap-3 flex-wrap justify-center">
+                <a
+                  href="https://gsnaauva.mychariow.shop/binbotsite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-white/90 hover:text-[#C2A374] underline underline-offset-2 inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Boutique Déco Partenaire</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#C2A374]" />
+                </a>
+                <span className="text-white/30">|</span>
+                <a
+                  href="https://auctionr.org/4/8eab967732fcec4002e96aa2e3b2a689"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C2A374] hover:text-[#E0C9A6] underline underline-offset-2 inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Enchères d'Art & Pièces Rares</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+                <span className="text-white/30">|</span>
+                <a
+                  href="https://amzn.to/4yw5oyj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-white/90 hover:text-[#C2A374] underline underline-offset-2 inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Boutique Amazon Déco</span>
+                  <ArrowUpRight className="w-3.5 h-3.5 text-[#C2A374]" />
+                </a>
+                <span className="text-white/30">|</span>
+                <a
+                  href="https://amzn.to/4zEyrR3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-[#C2A374] hover:text-[#E0C9A6] underline underline-offset-2 inline-flex items-center gap-1 transition-colors"
+                >
+                  <span>Offre Flash Amazon</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
             </div>
             <button
               onClick={() => setShowPromoBanner(false)}
@@ -181,7 +212,37 @@ export const Navbar: React.FC<NavbarProps> = ({ cartCount, onOpenCart, onOpenCon
               onClick={() => setMobileMenuOpen(false)}
               className="py-2 border-b border-[#EAE4DC]/60 text-[#9C6D48] font-semibold hover:text-[#1A1816] flex items-center justify-between"
             >
-              <span>Boutique Partenaire Officielle</span>
+              <span>Boutique Partenaire Déco</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+            <a
+              href="https://auctionr.org/4/8eab967732fcec4002e96aa2e3b2a689"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2 border-b border-[#EAE4DC]/60 text-[#9C6D48] font-semibold hover:text-[#1A1816] flex items-center justify-between"
+            >
+              <span>Enchères d'Art & Design (Auctionr)</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+            <a
+              href="https://amzn.to/4yw5oyj"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2 border-b border-[#EAE4DC]/60 text-[#9C6D48] font-semibold hover:text-[#1A1816] flex items-center justify-between"
+            >
+              <span>Sélection Déco Amazon</span>
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+            <a
+              href="https://amzn.to/4zEyrR3"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="py-2 border-b border-[#EAE4DC]/60 text-[#9C6D48] font-semibold hover:text-[#1A1816] flex items-center justify-between"
+            >
+              <span>Offre Spéciale Amazon Déco</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
             <button

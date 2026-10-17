@@ -117,32 +117,106 @@ export const BoutiqueCatalog: React.FC<BoutiqueCatalogProps> = ({ onAddToCart })
           })}
         </div>
 
-        {/* Curated Partner Showcase Banner */}
-        <div className="mt-14 p-6 sm:p-8 rounded-lg bg-[#F5F2EB] border border-[#E2DDD3] flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="space-y-1.5 text-center md:text-left">
-            <div className="text-[11px] uppercase tracking-widest text-[#9C6D48] font-semibold flex items-center justify-center md:justify-start gap-1.5">
-              <span>Sélection & Offre Partenaire</span>
-              <span aria-hidden="true">·</span>
-              <span>Boutique Officielle</span>
+        {/* Curated Partner Showcase Grid (Boutique, Enchères & Amazon) */}
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Card 1: Boutique Déco */}
+          <div className="p-6 sm:p-7 rounded-lg bg-[#F5F2EB] border border-[#E2DDD3] flex flex-col justify-between hover:border-[#1A1816] transition-all">
+            <div className="space-y-2">
+              <div className="text-[11px] uppercase tracking-widest text-[#9C6D48] font-semibold flex items-center gap-1.5">
+                <span>Partenaire Déco</span>
+                <span aria-hidden="true">·</span>
+                <span>Boutique Officielle</span>
+              </div>
+              <h3 className="font-serif-display text-2xl text-[#1A1816] font-medium">
+                Boutique Déco & Objets
+              </h3>
+              <p className="text-xs sm:text-sm text-[#5A544A] leading-relaxed">
+                Retrouvez une sélection complémentaire d’objets, solutions déco et offres exclusives
+                proposées par notre partenaire référencé.
+              </p>
             </div>
-            <h3 className="font-serif-display text-2xl text-[#1A1816] font-medium">
-              Découvrez la boutique en ligne partenaire
-            </h3>
-            <p className="text-xs sm:text-sm text-[#5A544A] max-w-xl">
-              Retrouvez une sélection complémentaire d’objets, solutions déco et offres exclusives
-              proposées par notre partenaire référencé.
-            </p>
+
+            <div className="mt-6 pt-4 border-t border-[#EAE4DC]">
+              <a
+                href="https://gsnaauva.mychariow.shop/binbotsite"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-2.5 text-xs font-semibold text-white bg-[#1A1816] rounded-md hover:bg-[#322E29] transition-all whitespace-nowrap shadow-xs active:scale-[0.99]"
+              >
+                <span>Visiter la boutique partenaire</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#C2A374]" />
+              </a>
+            </div>
           </div>
 
-          <a
-            href="https://gsnaauva.mychariow.shop/binbotsite"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 text-xs sm:text-sm font-semibold text-white bg-[#1A1816] rounded-md hover:bg-[#322E29] transition-all whitespace-nowrap shadow-xs active:scale-[0.99] shrink-0"
-          >
-            <span>Visiter la boutique partenaire</span>
-            <ArrowUpRight className="w-4 h-4 text-[#C2A374]" />
-          </a>
+          {/* Card 2: Enchères d'Art */}
+          <div className="p-6 sm:p-7 rounded-lg bg-[#F5F2EB] border border-[#E2DDD3] flex flex-col justify-between hover:border-[#1A1816] transition-all">
+            <div className="space-y-2">
+              <div className="text-[11px] uppercase tracking-widest text-[#9C6D48] font-semibold flex items-center gap-1.5">
+                <span>Curation d'Art & Mobilier</span>
+                <span aria-hidden="true">·</span>
+                <span>Enchères Rares</span>
+              </div>
+              <h3 className="font-serif-display text-2xl text-[#1A1816] font-medium">
+                Ventes aux Enchères d'Art
+              </h3>
+              <p className="text-xs sm:text-sm text-[#5A544A] leading-relaxed">
+                Accédez à la plateforme d’enchères exclusive Auctionr pour acquérir des œuvres d’art,
+                antiquités architecturales et mobilier de collection.
+              </p>
+            </div>
+
+            <div className="mt-6 pt-4 border-t border-[#EAE4DC]">
+              <a
+                href="https://auctionr.org/4/8eab967732fcec4002e96aa2e3b2a689"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-5 py-2.5 text-xs font-semibold text-white bg-[#1A1816] rounded-md hover:bg-[#322E29] transition-all whitespace-nowrap shadow-xs active:scale-[0.99]"
+              >
+                <span>Accéder aux enchères</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#C2A374]" />
+              </a>
+            </div>
+          </div>
+
+          {/* Card 3: Amazon Déco */}
+          <div className="p-6 sm:p-7 rounded-lg bg-[#F5F2EB] border border-[#E2DDD3] flex flex-col justify-between hover:border-[#1A1816] transition-all">
+            <div className="space-y-2">
+              <div className="text-[11px] uppercase tracking-widest text-[#9C6D48] font-semibold flex items-center gap-1.5">
+                <span>Partenaire Amazon</span>
+                <span aria-hidden="true">·</span>
+                <span>Sélection Vérifiée</span>
+              </div>
+              <h3 className="font-serif-display text-2xl text-[#1A1816] font-medium">
+                Essentiels Déco Amazon
+              </h3>
+              <p className="text-xs sm:text-sm text-[#5A544A] leading-relaxed">
+                Découvrez notre sélection recommandée de luminaires d'appoint, accessoires textiles,
+                arts de la table et mobilier tendance disponibles sur Amazon.
+              </p>
+            </div>
+
+            <div className="mt-6 pt-4 border-t border-[#EAE4DC] flex flex-col sm:flex-row gap-2.5">
+              <a
+                href="https://amzn.to/4yw5oyj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 flex-1 px-3 py-2.5 text-xs font-semibold text-white bg-[#1A1816] rounded-md hover:bg-[#322E29] transition-all whitespace-nowrap shadow-xs active:scale-[0.99]"
+              >
+                <span>Sélection Déco</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#C2A374]" />
+              </a>
+              <a
+                href="https://amzn.to/4zEyrR3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 flex-1 px-3 py-2.5 text-xs font-semibold text-[#1A1816] bg-[#C2A374] rounded-md hover:bg-[#D4B98E] transition-all whitespace-nowrap shadow-xs active:scale-[0.99]"
+              >
+                <span>Offre Spéciale</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#1A1816]" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -54,7 +54,40 @@ export const Footer: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-[#C2A374] hover:text-[#E0C9A6] transition-colors inline-flex items-center gap-1 font-medium"
                 >
-                  <span>Boutique Partenaire</span>
+                  <span>Boutique Partenaire Déco</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://auctionr.org/4/8eab967732fcec4002e96aa2e3b2a689"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C2A374] hover:text-[#E0C9A6] transition-colors inline-flex items-center gap-1 font-medium"
+                >
+                  <span>Enchères d'Art (Auctionr)</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://amzn.to/4yw5oyj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C2A374] hover:text-[#E0C9A6] transition-colors inline-flex items-center gap-1 font-medium"
+                >
+                  <span>Sélection Déco Amazon</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://amzn.to/4zEyrR3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C2A374] hover:text-[#E0C9A6] transition-colors inline-flex items-center gap-1 font-medium"
+                >
+                  <span>Offre Flash Amazon Déco</span>
                   <ArrowUpRight className="w-3 h-3" />
                 </a>
               </li>

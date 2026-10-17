@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { STYLES_DATA } from '../data/stylesData';
-import { Copy, Check, Sparkles, Lightbulb, Compass, Layers } from 'lucide-react';
+import { Copy, Check, Sparkles, Lightbulb, Compass, Layers, ArrowUpRight } from 'lucide-react';
 
 export const StyleStudio: React.FC = () => {
   const [selectedStyleId, setSelectedStyleId] = useState<string>('haussmannien-moderne');
@@ -165,6 +165,24 @@ export const StyleStudio: React.FC = () => {
                       {idx < currentStyle.sampleItems.length - 1 && <span className="text-[#BDB3A6]">·</span>}
                     </React.Fragment>
                   ))}
+                </div>
+              </div>
+
+              {/* Recommended Amazon Decor Offer Callout */}
+              <div className="pt-3 border-t border-[#EAE4DC]">
+                <div className="p-3.5 rounded-md bg-[#FAF7F0] border border-[#E8DFCF] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+                  <span className="text-[#6B6457] text-center sm:text-left">
+                    Envie d'accessoiriser cette ambiance ? Retrouvez notre sélection spéciale déco sur Amazon :
+                  </span>
+                  <a
+                    href="https://amzn.to/4zEyrR3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-[#1A1816] hover:text-[#9C6D48] underline underline-offset-2 inline-flex items-center gap-1 shrink-0 whitespace-nowrap"
+                  >
+                    <span>Voir l'offre Amazon</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-[#9C6D48]" />
+                  </a>
                 </div>
               </div>
             </div>
